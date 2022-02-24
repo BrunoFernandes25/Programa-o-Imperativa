@@ -72,7 +72,7 @@ void desenhaquadrado (int n) {
 void xadrez (int n) {
     for(int i= 0; i<n;i++){
         for(int j=0;j<n;j++){
-            if((i+j)%2 != 0) putchar('_');  // != 0 pode ser omitido a condicao consideramosd sempre verdadeira
+            if((i+j)%2 != 0) putchar('_');  // != 0 pode ser omitido a condicao consideramos sempre verdadeira
             else putchar('#');
         }
     printf("\n");
@@ -81,7 +81,7 @@ void xadrez (int n) {
 
 void triangulov (int n) {
     for(int i = 0;i< 2*n-1;i++) {
-        for(int j=0;j<2*n-i-1;j++) {   // puta de condicao primeiro que lá chegasse
+        for(int j=0;j<2*n-i-1;j++) {   // primeiro que chegasse a esta condicao..
             if (j<=i) {
                 putchar('#');
             }
